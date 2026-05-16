@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hokipicture — Wedding Pricelist 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #F5F0E8;
+    --cream-dark: #EDE6D6;
+    --gold: #B89A6A;
+    --gold-light: #D4B896;
+    --gold-dark: #8C7350;
+    --charcoal: #1A1A18;
+    --charcoal-mid: #2E2E2A;
+    --charcoal-soft: #3D3D38;
+    --text-muted: #7A7A72;
+    --text-light: #9A9A92;
+    --white: #FDFAF5;
+    --serif: 'Cormorant Garamond', serif;
+    --sans: 'Jost', sans-serif;
+    --wa-green: #25D366;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--charcoal);
+    color: var(--cream);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 4rem 2rem;
+    background: var(--charcoal);
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(184,154,106,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-ornament {
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+    margin: 0 auto 2.5rem;
+    opacity: 0.6;
+  }
+
+  .hero-tag {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(3.5rem, 9vw, 7rem);
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .hero-sub {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto 2.5rem;
+    width: 220px;
+  }
+
+  .hero-divider span {
+    flex: 1;
+    height: 0.5px;
+    background: var(--gold);
+    opacity: 0.4;
+  }
+
+  .hero-divider i {
+    color: var(--gold);
+    font-size: 0.6rem;
+    opacity: 0.7;
+  }
+
+  .hero-contact {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--text-light);
+    text-transform: uppercase;
+  }
+
+  /* NAV */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(26,26,24,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 0.5px solid rgba(184,154,106,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+    overflow-x: auto;
+  }
+
+  .nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 1rem 1.25rem;
+    transition: color 0.2s;
+    white-space: nowrap;
+  }
+
+  .nav a:hover { color: var(--gold); }
+
+  /* SECTION */
+  .section {
+    padding: 5rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .section-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--cream);
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .section-rule {
+    width: 40px;
+    height: 0.5px;
+    background: var(--gold);
+    margin: 1.5rem auto 0;
+    opacity: 0.5;
+  }
+
+  /* DIVIDER */
+  .divider {
+    border: none;
+    border-top: 0.5px solid rgba(184,154,106,0.15);
+    margin: 0;
+  }
+
+  /* PACKAGE CARD */
+  .card-grid {
+    display: grid;
+    gap: 1.5px;
+    background: rgba(184,154,106,0.1);
+    border: 0.5px solid rgba(184,154,106,0.2);
+  }
+
+  .card-grid.cols-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .card-grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card-grid.cols-1 { grid-template-columns: 1fr; }
+
+  .pkg-card {
+    background: var(--charcoal-mid);
+    padding: 2rem 2rem 1.75rem;
+    position: relative;
+    transition: background 0.2s;
+  }
+
+  .pkg-card:hover { background: var(--charcoal-soft); }
+
+  .pkg-card.featured {
+    background: var(--charcoal-soft);
+    border-top: 2px solid var(--gold);
+  }
+
+  .featured-badge {
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--charcoal);
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 3px 12px;
+  }
+
+  .pkg-name {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--gold-light);
+    margin-bottom: 0.25rem;
+  }
+
+  .pkg-price {
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--cream);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .pkg-price span {
+    font-size: 0.85rem;
+    font-family: var(--sans);
+    color: var(--text-muted);
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+
+  .pkg-section-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    display: block;
+  }
+
+  .pkg-features {
+    list-style: none;
+    margin-bottom: 1.75rem;
+  }
+
+  .pkg-features li {
+    font-size: 0.8rem;
+    color: var(--cream-dark);
+    padding: 0.3rem 0;
+    border-bottom: 0.5px solid rgba(184,154,106,0.08);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .pkg-features li::before {
+    content: '—';
+    color: var(--gold);
+    opacity: 0.6;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .pkg-note {
+    font-size: 0.72rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    border-left: 1.5px solid rgba(184,154,106,0.3);
+    background: rgba(184,154,106,0.04);
+  }
+
+  /* WA BUTTON */
+  .wa-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    background: transparent;
+    border: 0.5px solid var(--gold);
+    color: var(--gold);
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+
+  .wa-btn:hover {
+    background: var(--gold);
+    color: var(--charcoal);
+  }
+
+  .wa-btn svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  /* ADDITIONAL TABLE */
+  .add-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .add-table thead tr {
+    border-bottom: 0.5px solid rgba(184,154,106,0.3);
+  }
+
+  .add-table th {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    padding: 0.75rem 0;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .add-table tbody tr {
+    border-bottom: 0.5px solid rgba(184,154,106,0.08);
+    transition: background 0.15s;
+  }
+
+  .add-table tbody tr:hover { background: rgba(184,154,106,0.04); }
+
+  .add-table td {
+    padding: 0.65rem 0.5rem;
+    font-size: 0.8rem;
+    color: var(--cream-dark);
+  }
+
+  .add-table td:last-child {
+    text-align: right;
+    color: var(--gold-light);
+    font-family: var(--serif);
+    font-size: 0.95rem;
+  }
+
+  .add-section-title {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--gold-light);
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  /* TNC */
+  .tnc-list {
+    list-style: none;
+    counter-reset: tnc;
+  }
+
+  .tnc-list li {
+    counter-increment: tnc;
+    display: flex;
+    gap: 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 0.5px solid rgba(184,154,106,0.08);
+    font-size: 0.82rem;
+    color: var(--cream-dark);
+    line-height: 1.6;
+  }
+
+  .tnc-list li::before {
+    content: counter(tnc, decimal-leading-zero);
+    color: var(--gold);
+    font-family: var(--serif);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    margin-top: 1px;
+    opacity: 0.7;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 4rem 2rem 3rem;
+    border-top: 0.5px solid rgba(184,154,106,0.15);
+  }
+
+  .footer-brand {
+    font-family: var(--serif);
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--gold-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.65rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+
+  .footer-info {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 2;
+  }
+
+  .footer-info a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  /* SCROLL REVEAL */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 600px) {
+    .section { padding: 3.5rem 1rem; }
+    .pkg-price { font-size: 1.6rem; }
+    .nav a { padding: 0.9rem 0.9rem; font-size: 0.62rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-ornament"></div>
+  <p class="hero-tag">Wedding Documentary · 2026</p>
+  <h1>Hoki<em>picture</em></h1>
+  <p class="hero-sub">Menghubungkan rasa, mengungkapkan suasana hati</p>
+  <div class="hero-divider">
+    <span></span>
+    <i>✦</i>
+    <span></span>
+  </div>
+  <p class="hero-contact">Karangnunggal, Tasikmalaya · +62 813 1356 9112</p>
+</section>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#engagement">Engagement</a>
+  <a href="#prewed">Prewed</a>
+  <a href="#wedding">Wedding</a>
+  <a href="#special">Special</a>
+  <a href="#video">Video</a>
+  <a href="#additional">Items</a>
+  <a href="#tnc">T&C</a>
+</nav>
+
+<!-- ENGAGEMENT -->
+<div id="engagement"></div>
+<div class="divider"></div>
+<div class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">Package</span>
+    <h2 class="section-title"><em>Engagement</em></h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="card-grid cols-2">
+    <div class="pkg-card">
+      <p class="pkg-name">Photo File Only</p>
+      <p class="pkg-price"><span>Rp</span>700.000</p>
+      <ul class="pkg-features">
+        <li>1 day photo engagement</li>
+        <li>1 photographer</li>
+        <li>5 jam kerja (max)</li>
+        <li>70 photo retouch</li>
+        <li>1 flashdisk</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Paket%20Engagement%20Photo%20File%20Only%20Rp%20700.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+    <div class="pkg-card featured">
+      <div class="featured-badge">Lengkap</div>
+      <p class="pkg-name">Photo + Video + Cetak</p>
+      <p class="pkg-price"><span>Rp</span>1.800.000</p>
+      <ul class="pkg-features">
+        <li>1 day photo & video engagement</li>
+        <li>1 videographer + 1 photographer</li>
+        <li>5 jam kerja (max)</li>
+        <li>1 print 12RP + frame minimalis</li>
+        <li>10 print 4R + hampers</li>
+        <li>70 photo retouch</li>
+        <li>1 edited video teaser 2–5 menit</li>
+        <li>1 flashdisk</li>
+      </ul>
+      <div class="pkg-note">Lokasi diluar Karangnunggal dikenakan biaya akomodasi sesuai jarak.</div>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Paket%20Engagement%20Photo%2BVideo%2BCetak%20Rp%201.800.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- PREWED -->
+<div id="prewed"></div>
+<div class="divider"></div>
+<div class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">Package</span>
+    <h2 class="section-title"><em>Prewed</em> Only</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="card-grid cols-3">
+    <div class="pkg-card">
+      <p class="pkg-name">Minimalis</p>
+      <p class="pkg-price"><span>Rp</span>800.000</p>
+      <ul class="pkg-features">
+        <li>1 day photo prewed</li>
+        <li>1 photographer + 1 assisten</li>
+        <li>5 jam kerja (max)</li>
+        <li>2 konsep (max)</li>
+        <li>70 foto retouch</li>
+        <li>Backup file master (FD)</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Paket%20Minimalis%20Prewed%20Rp%20800.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+    <div class="pkg-card featured">
+      <div class="featured-badge">Terpopuler</div>
+      <p class="pkg-name">Royal</p>
+      <p class="pkg-price"><span>Rp</span>1.600.000</p>
+      <ul class="pkg-features">
+        <li>1 day photo prewed</li>
+        <li>1 photographer + 1 assisten</li>
+        <li>5 jam kerja (max)</li>
+        <li>2 konsep (max)</li>
+        <li>70 foto retouch</li>
+        <li>1 print 16RP + frame minimalis</li>
+        <li>3 print 5RP + frame minimalis</li>
+        <li>10 print 4R</li>
+        <li>Backup file master (FD)</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Paket%20Royal%20Prewed%20Rp%201.600.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+    <div class="pkg-card">
+      <p class="pkg-name">Platinum</p>
+      <p class="pkg-price"><span>Rp</span>3.000.000</p>
+      <ul class="pkg-features">
+        <li>1 day photo prewed</li>
+        <li>2 photographer + 1 assisten</li>
+        <li>5 jam kerja (max)</li>
+        <li>2 konsep (max)</li>
+        <li>100 foto retouch</li>
+        <li>1 print 20RP + frame minimalis</li>
+        <li>2 print 16RP + frame minimalis</li>
+        <li>3 print 8RP + frame minimalis</li>
+        <li>3 print 5R + frame minimalis</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Paket%20Platinum%20Prewed%20Rp%203.000.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+  </div>
+  <div style="margin-top:1rem; padding:1rem; border-left:1.5px solid rgba(184,154,106,0.3); background:rgba(184,154,106,0.03);">
+    <p style="font-size:0.75rem; color:var(--text-light);">Penambahan konsep <span style="color:var(--gold)">Rp 400.000</span> (+3 print 5R) &nbsp;·&nbsp; Penambahan video prewed <span style="color:var(--gold)">Rp 1.100.000</span></p>
+    <p style="font-size:0.75rem; color:var(--text-light); margin-top:4px;">Harga tidak termasuk biaya tiket pesawat, tiket masuk, transport, studio, charge lokasi.</p>
+  </div>
+</div>
+
+<!-- WEDDING ONLY -->
+<div id="wedding"></div>
+<div class="divider"></div>
+<div class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">Package</span>
+    <h2 class="section-title"><em>Wedding</em> Only</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="card-grid cols-2">
+    <div class="pkg-card">
+      <p class="pkg-name">Package I</p>
+      <p class="pkg-price"><span>Rp</span>1.300.000</p>
+      <ul class="pkg-features">
+        <li>1 day akad / pemberkatan & resepsi</li>
+        <li>8 jam kerja (max)</li>
+        <li>1 photographer</li>
+        <li>1 album magnetik</li>
+        <li>114 print 4R</li>
+        <li>1 print 20x30</li>
+        <li>120 foto edit</li>
+        <li>Backup file master (FD)</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Wedding%20Package%20I%20Rp%201.300.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+    <div class="pkg-card featured">
+      <div class="featured-badge">Photo + Video</div>
+      <p class="pkg-name">Package II</p>
+      <p class="pkg-price"><span>Rp</span>2.500.000</p>
+      <ul class="pkg-features">
+        <li>1 day akad / pemberkatan & resepsi</li>
+        <li>8 jam kerja (max)</li>
+        <li>1 photographer + 1 videographer</li>
+        <li>1 album magnetik</li>
+        <li>1 print 12RP</li>
+        <li>114 print 4R</li>
+        <li>1 print 20x30</li>
+        <li>140 foto edit</li>
+        <li>1 video edited 3–5 menit</li>
+        <li>Backup file master (FD)</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Wedding%20Package%20II%20Rp%202.500.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+    <div class="pkg-card">
+      <p class="pkg-name">Package III</p>
+      <p class="pkg-price"><span>Rp</span>3.500.000</p>
+      <ul class="pkg-features">
+        <li>1 day akad / pemberkatan & resepsi</li>
+        <li>8 jam kerja (max) · 2 photographer + 1 videographer</li>
+        <li>1 box album minimalis</li>
+        <li>1 album magazine 20x30cm (10 sheet)</li>
+        <li>150 foto edit</li>
+        <li>1 print 16RP + frame minimalis</li>
+        <li>1 video edited 3–5 menit</li>
+        <li>Backup file master (FD)</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Wedding%20Package%20III%20Rp%203.500.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+    <div class="pkg-card">
+      <p class="pkg-name">Package IV</p>
+      <p class="pkg-price"><span>Rp</span>6.500.000</p>
+      <ul class="pkg-features">
+        <li>1 day akad / pemberkatan & resepsi</li>
+        <li>8 jam kerja (max) · 2 photographer + 1 videographer</li>
+        <li>1 day siraman/midodareni (CPW) · 1 photographer + 1 videographer · 4 jam (FILE ONLY)</li>
+        <li>1 box album 2 in 1</li>
+        <li>1 album magazine 20x30cm (10 sheet)</li>
+        <li>180 foto edit</li>
+        <li>1 print 20RP + frame minimalis</li>
+        <li>1 print 16RP + frame minimalis</li>
+        <li>1 video edited 3–5 menit</li>
+        <li>Backup file master (FD)</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Wedding%20Package%20IV%20Rp%206.500.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+  </div>
+  <div style="margin-top:1rem; padding:1rem; border-left:1.5px solid rgba(184,154,106,0.3); background:rgba(184,154,106,0.03);">
+    <p style="font-size:0.75rem; color:var(--text-light);">Penambahan siraman/midodareni <span style="color:var(--gold)">Rp 500.000</span> (file only) &nbsp;·&nbsp; Penambahan video teaser clip <span style="color:var(--gold)">Rp 1.100.000</span> &nbsp;·&nbsp; Video full durasi <span style="color:var(--gold)">Rp 900.000</span> &nbsp;·&nbsp; Penambahan waktu <span style="color:var(--gold)">Rp 300.000/jam</span></p>
+  </div>
+</div>
+
+<!-- SPECIAL -->
+<div id="special"></div>
+<div class="divider"></div>
+<div class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">Package</span>
+    <h2 class="section-title"><em>Special</em> Wedding</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="card-grid cols-2">
+
+    <!-- SP I -->
+    <div class="pkg-card">
+      <p class="pkg-name">Special Package I</p>
+      <p class="pkg-price"><span>Rp</span>3.800.000</p>
+      <span class="pkg-section-label">Prewed</span>
+      <ul class="pkg-features">
+        <li>1 day photoshoot · 1 photographer + 1 assisten</li>
+        <li>5 jam kerja (max) · 2 konsep (max)</li>
+        <li>50 foto retouch</li>
+        <li>1 print 16RP + 3 print 5RP + frame minimalis</li>
+        <li>10 print 4R · Backup FD</li>
+      </ul>
+      <span class="pkg-section-label">Wedding</span>
+      <ul class="pkg-features">
+        <li>1 day akad & resepsi · 8 jam kerja (max)</li>
+        <li>1 photographer + 1 videographer</li>
+        <li>1 album magnetik · 114 print 4R · 1 print 20x30</li>
+        <li>50 foto retouch · 1 print 12RP + frame</li>
+        <li>1 video edited 3–5 menit · Backup FD</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Special%20Package%20I%20Rp%203.800.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+
+    <!-- SP II -->
+    <div class="pkg-card featured">
+      <div class="featured-badge">Siraman Included</div>
+      <p class="pkg-name">Special Package II</p>
+      <p class="pkg-price"><span>Rp</span>5.200.000</p>
+      <span class="pkg-section-label">Prewed</span>
+      <ul class="pkg-features">
+        <li>1 day photoshoot · 1 photographer + 1 assisten</li>
+        <li>5 jam kerja (max) · 2 konsep (max) · 50 foto retouch</li>
+        <li>2 print 16RP + 3 print 5R + frame minimalis</li>
+        <li>10 print 4R · Backup FD</li>
+      </ul>
+      <span class="pkg-section-label">Siraman / Midodareni</span>
+      <ul class="pkg-features">
+        <li>1 day pengajian & siraman (CPW)</li>
+        <li>1 photographer + 1 videographer · 4 jam (FILE ONLY)</li>
+      </ul>
+      <span class="pkg-section-label">Wedding</span>
+      <ul class="pkg-features">
+        <li>1 day akad & resepsi · 8 jam kerja (max)</li>
+        <li>1 photographer + 1 videographer</li>
+        <li>1 box album minimalis · 1 album magazine 20x30cm</li>
+        <li>50 foto retouch · 1 print 12RP + frame</li>
+        <li>1 video edited 3–5 menit · Backup FD</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Special%20Package%20II%20Rp%205.200.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+
+    <!-- SP III -->
+    <div class="pkg-card">
+      <p class="pkg-name">Special Package III</p>
+      <p class="pkg-price"><span>Rp</span>7.500.000</p>
+      <span class="pkg-section-label">Prewed</span>
+      <ul class="pkg-features">
+        <li>1 day photoshoot · 2 photographer + 1 videographer</li>
+        <li>6 jam kerja (max) · 2 konsep · 50 foto retouch</li>
+        <li>2 print 16RP + 3 print 8R + 3 print 5R + frame</li>
+        <li>1 edited video TEASER (1–5 menit) · Backup FD</li>
+      </ul>
+      <span class="pkg-section-label">Siraman / Midodareni</span>
+      <ul class="pkg-features">
+        <li>1 day pengajian & siraman · 1 photographer + 1 videographer · 4 jam (FILE ONLY)</li>
+      </ul>
+      <span class="pkg-section-label">Wedding</span>
+      <ul class="pkg-features">
+        <li>1 day akad & resepsi · 8 jam kerja · 2 photographer + 1 videographer</li>
+        <li>1 box album 2 in 1 (minimalis)</li>
+        <li>2 album magazine 20x30cm (10 sheet)</li>
+        <li>70 foto retouch · 1 print 16RP + frame</li>
+        <li>1 video edited 3–5 menit · Backup FD</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Special%20Package%20III%20Rp%207.500.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+
+    <!-- SP IV -->
+    <div class="pkg-card">
+      <p class="pkg-name">Special Package IV</p>
+      <p class="pkg-price"><span>Rp</span>10.000.000</p>
+      <span class="pkg-section-label">Prewed</span>
+      <ul class="pkg-features">
+        <li>1 day photoshoot · 2 photographer + 1 videographer</li>
+        <li>7 jam kerja (max) · 2 konsep · 60 foto retouch</li>
+        <li>2 print 16RP + 3 print 8R + 6 print 5R + frame</li>
+        <li>1 video TEASER (1–5 menit) · Backup FD</li>
+      </ul>
+      <span class="pkg-section-label">Siraman / Midodareni</span>
+      <ul class="pkg-features">
+        <li>1 day pengajian & siraman · 1 photographer + 1 videographer · 4 jam (FILE ONLY)</li>
+      </ul>
+      <span class="pkg-section-label">Wedding</span>
+      <ul class="pkg-features">
+        <li>1 day akad & resepsi · 8 jam kerja · 2 photographer + 2 videographer</li>
+        <li>1 box album minimalis</li>
+        <li>2 album magazine 30x30cm (10 sheet)</li>
+        <li>1000 foto retouch · 1 print 20RP + 1 print 16RP + frame</li>
+        <li>1 video edited 3–5 menit + 1 edited full durasi (30 menit)</li>
+        <li>Backup FD</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Special%20Package%20IV%20Rp%2010.000.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+  </div>
+  <div style="margin-top:1rem; padding:1rem; border-left:1.5px solid rgba(184,154,106,0.3); background:rgba(184,154,106,0.03);">
+    <p style="font-size:0.75rem; color:var(--text-light);">Penambahan siraman <span style="color:var(--gold)">Rp 500.000</span> &nbsp;·&nbsp; Video teaser <span style="color:var(--gold)">Rp 1.000.000</span> &nbsp;·&nbsp; Video full durasi <span style="color:var(--gold)">Rp 900.000</span> &nbsp;·&nbsp; Drone + pilot <span style="color:var(--gold)">Rp 1.500.000</span> &nbsp;·&nbsp; Penambahan waktu <span style="color:var(--gold)">Rp 500.000/jam</span></p>
+  </div>
+</div>
+
+<!-- VIDEO -->
+<div id="video"></div>
+<div class="divider"></div>
+<div class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">Package</span>
+    <h2 class="section-title"><em>Video</em> Package</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="card-grid cols-2">
+    <div class="pkg-card">
+      <p class="pkg-name">Prewed / Wedding Teaser</p>
+      <p class="pkg-price"><span>Rp</span>1.100.000</p>
+      <ul class="pkg-features">
+        <li>1 day prewed / wedding</li>
+        <li>1 videographer</li>
+        <li>1 edit teaser prewed / wedding</li>
+        <li>Backup file master (FD)</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Video%20Prewed%2FWedding%20Teaser%20Rp%201.100.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+    <div class="pkg-card">
+      <p class="pkg-name">Pengajian & Siraman</p>
+      <p class="pkg-price"><span>Rp</span>1.000.000</p>
+      <ul class="pkg-features">
+        <li>1 day pengajian & siraman</li>
+        <li>1 videographer · 5 jam kerja (max)</li>
+        <li>1 edit teaser prewed / wedding</li>
+        <li>Backup file master (FD)</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Video%20Pengajian%20%26%20Siraman%20Rp%201.000.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+    <div class="pkg-card">
+      <p class="pkg-name">Wedding Musical</p>
+      <p class="pkg-price"><span>Rp</span>1.000.000</p>
+      <ul class="pkg-features">
+        <li>1 day videoshoot · property</li>
+        <li>1 videographer + 1 assisten</li>
+        <li>1 edit video · 1 flashdisk 16GB</li>
+        <li>Lagu dipilih oleh client</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Video%20Wedding%20Musical%20Rp%201.000.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+    <div class="pkg-card featured">
+      <div class="featured-badge">Premium</div>
+      <p class="pkg-name">Wedding Video Documentation</p>
+      <p class="pkg-price"><span>Rp</span>9.000.000</p>
+      <ul class="pkg-features">
+        <li>1 day videoshoot · conditional duration</li>
+        <li>1 videographer</li>
+        <li>1 full edit video</li>
+        <li>1 flashdisk (wooden box)</li>
+        <li>Lagu dipilih oleh client</li>
+      </ul>
+      <a class="wa-btn" href="https://wa.me/6281313569112?text=Halo%20Hokipicture%2C%20saya%20tertarik%20dengan%20*Wedding%20Video%20Documentation%20Rp%209.000.000*%20%F0%9F%99%8F" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.819L.057 23.512c-.07.275.174.523.45.457l5.826-1.44A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.763-.522-5.327-1.428l-.372-.217-3.896.963.994-3.795-.238-.39A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Tanya via WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ADDITIONAL -->
+<div id="additional"></div>
+<div class="divider"></div>
+<div class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">À La Carte</span>
+    <h2 class="section-title"><em>Additional</em> Items</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:3rem;">
+    <div>
+      <p class="add-section-title">Frame for Display</p>
+      <table class="add-table">
+        <thead><tr><th>Item</th><th>Harga</th></tr></thead>
+        <tbody>
+          <tr><td>4R Photo + Frame</td><td>Rp 15.000</td></tr>
+          <tr><td>5R Photo + Frame</td><td>Rp 25.000</td></tr>
+          <tr><td>8RP Photo + Frame</td><td>Rp 90.000</td></tr>
+          <tr><td>12RP Photo + Frame</td><td>Rp 200.000</td></tr>
+          <tr><td>16RP Photo + Frame</td><td>Rp 300.000</td></tr>
+          <tr><td>20RP Photo + Frame</td><td>Rp 400.000</td></tr>
+          <tr><td>24RP Photo + Frame</td><td>Rp 500.000</td></tr>
+        </tbody>
+      </table>
+      <p class="add-section-title" style="margin-top:2rem;">Multimedia</p>
+      <table class="add-table">
+        <thead><tr><th>Item</th><th>Harga</th></tr></thead>
+        <tbody>
+          <tr><td>Plasma TV 40" / unit</td><td>Rp 600.000</td></tr>
+          <tr><td>Screen 3x4m + Projector</td><td>Rp 2.000.000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <p class="add-section-title">Album & Box</p>
+      <table class="add-table">
+        <thead><tr><th>Item</th><th>Harga</th></tr></thead>
+        <tbody>
+          <tr><td>Album Magnetik 20x30cm</td><td>Rp 500.000</td></tr>
+          <tr><td>Album Magazine 20x30 / 30x20</td><td>Rp 1.000.000</td></tr>
+          <tr><td>Album Magazine 30x30cm</td><td>Rp 1.250.000</td></tr>
+          <tr><td>Box Leather isi 1</td><td>Rp 75.000/pcs</td></tr>
+          <tr><td>Box Leather isi 2</td><td>Rp 100.000/pcs</td></tr>
+          <tr><td>Tas Kulit isi 2</td><td>Rp 150.000/pcs</td></tr>
+          <tr><td>Box Kayu isi 1</td><td>Rp 150.000/box</td></tr>
+          <tr><td>Box Kayu isi 2</td><td>Rp 300.000/box</td></tr>
+          <tr><td>Box Kayu Custom</td><td>Rp 1.200.000/box</td></tr>
+          <tr><td>Box Leather Cabinet</td><td>Rp 800.000/box</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- TNC -->
+<div id="tnc"></div>
+<div class="divider"></div>
+<div class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">Penting Dibaca</span>
+    <h2 class="section-title">Terms <em>&</em> Conditions</h2>
+    <div class="section-rule"></div>
+  </div>
+  <ol class="tnc-list">
+    <li>Untuk tanggal di tag apabila telah melakukan downpayment dengan Transfer ke no rek admin, dengan dibuatkan 2 termin pembayaran.</li>
+    <li>Harga yang tercantum di paket adalah harga liputan untuk wilayah Karangnunggal. Untuk liputan di luar Karangnunggal dikenakan charge.</li>
+    <li>Untuk pembayaran sesuai dengan termin pembayaran yang sudah tertera di invoice atau kontrak.</li>
+    <li>Untuk penambahan ManPower atau Multimedia lainnya (Plasma TV, Screen Projector, Jimmy Jib, Live, Drone, dll), besaran harganya dapat langsung dibicarakan dengan admin terkait.</li>
+    <li>Jika pihak client membatalkan event, uang yang sudah masuk tidak dapat dikembalikan.</li>
+    <li>Charge vendor gedung dibebankan kepada client (jika gedung menggunakan sistem rekanan).</li>
+    <li>Prosedur Prewedding: (a) Client menentukan terlebih dahulu tanggal & bulan prewedding; (b) Konsultasi dengan admin Hokipicture untuk mencocokkan jadwal; (c) Client mencari referensi konsep prewedding; (d) Pihak Hokipicture membantu memberikan masukan referensi konsep; (e) Prewedding dilakukan di weekday; (f) Biaya charge lokasi, Studio, MUA, wardrobe, dll dibebankan kepada client.</li>
+    <li>Untuk pelunasan package dibayar max setelah hari H atau setelah pemotretan dilaksanakan.</li>
+    <li>Client akan diberikan max 10 foto untuk upload story di hari H.</li>
+    <li>All soft file master akan dihapus setelah 3 bulan dari hari H, terkecuali all file edit.</li>
+    <li>Apabila pihak perusahaan terjadi kebakaran, bad sector, human error, sehingga terjadi hal yang tidak diinginkan atau kehilangan file, maka di diskusikan oleh kedua belah pihak secara kekeluargaan.</li>
+    <li>Hasil produksi keseluruhan output wedding (album, video, pembesaran) diproses maksimal 40 hari kerja.</li>
+    <li>Hasil produksi keseluruhan output wedding (album, video, pembesaran) dikirim melalui agen paket atau ojek online (biaya paket dibebankan kepada client).</li>
+    <li>Apabila pihak client sudah masuk Downpayment, maka pihak client telah menyetujui dengan Terms and Condition (T&C) yang tertera.</li>
+  </ol>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-brand">Hokipicture</p>
+  <p class="footer-tagline">Wedding Documentery</p>
+  <p class="footer-info">
+    Jl. Raya Karangnunggal, Kec. Karangnunggal, Kab. Tasikmalaya, Jawa Barat<br>
+    <a href="tel:+6281313569112">081 313 569 112</a> &nbsp;·&nbsp;
+    <a href="https://instagram.com/hokipicture" target="_blank">@hokipicture</a> &nbsp;·&nbsp;
+    <a href="mailto:hoki.picture@gmail.com">hoki.picture@gmail.com</a>
+  </p>
+  <div style="margin-top:2rem; width:40px; height:0.5px; background:var(--gold); margin-left:auto; margin-right:auto; opacity:0.3;"></div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
